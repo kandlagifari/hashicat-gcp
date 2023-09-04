@@ -6,9 +6,10 @@ module "network" {
   network_name = "kandla-subnet"
   project_id = var.project
   subnets = [
-  {
-    subnet_name   = "kandla-subnet"
-    subnet_ip     = "10.100.10.0/24"
-    subnet_region = var.region
-  }
+    {
+        subnet_name   = "kandla-subnet"
+        subnet_ip     = "10.100.10.0/24"
+        subnet_region = var.region
+    }
+  ]
 }
